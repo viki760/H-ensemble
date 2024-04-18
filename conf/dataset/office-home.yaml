@@ -1,0 +1,5 @@
+root: ./_dataset/office-home
+name: office-home
+domain: art_0
+domains: ['art_0', 'art_1', 'art_2', 'clipart_0', 'clipart_1', 'clipart_2', 'product_0', 'product_1', 'product_2', 'realworld_0', 'realworld_1', 'realworld_2']
+num_classes: 21

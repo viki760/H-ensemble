@@ -1,0 +1,52 @@
+seed: 2023
+# data_path: ./
+train_batch_size: 256
+eval_batch_size: 256
+num_workers: 12
+max_epochs: 20
+# train_epoch_length: 1000
+# eval_epoch_length: 1000
+lr: 0.0001
+use_amp: false
+debug: false
+filename_prefix: training
+n_saved: 2
+save_every_iters: 10000000
+patience: 3
+output_dir: ./logs
+checkpoint_dir: ./checkpoints
+if_use_shot_model: false
+
+log_every_iters: 1 # office31: 2k; office-caltech: 900
+
+few_shot_num: 10
+
+# val_sample_num: null
+val_sample_num: 2000
+
+# random, average, hscore, opt_all, opt_leave_one_out
+alpha_type: opt_leave_one_out
+alpha_opt:
+  lr: 0.005
+  optimizer: SGD
+  epoch: 1000
+
+model:
+  name: resnet18
+  hidden_dim: 64
+
+hydra:
+  output_subdir: "."
+  job:
+    chdir: False
+
+data:
+  train_ratio: 0.9
+
+defaults:
+  - dataset: office-caltech
+  - _self_  
+  # - override hydra/hydra_logging: disabled
+  # - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: none
+  - override hydra/job_logging: none

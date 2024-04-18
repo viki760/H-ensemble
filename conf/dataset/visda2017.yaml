@@ -1,0 +1,5 @@
+root: ./_dataset/visda2017
+name: visda2017
+domain: t_task0
+domains: ["t_task0", "t_task1", "t_task2", "t_task3", "v_task0", "v_task1", "v_task2", "v_task3",]
+num_classes: 3
