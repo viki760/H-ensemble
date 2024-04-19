@@ -1,0 +1,7 @@
+root: ./_dataset/office-caltech
+name: office-caltech
+domain: amazon
+# domains: ["amazon", "caltech", "dslr", "webcam",]
+# num_classes: 10
+domains: ['amazon_0', 'amazon_1', 'amazon_2', 'caltech_0', 'caltech_1', 'caltech_2', 'dslr_0', 'dslr_1', 'dslr_2', 'webcam_0', 'webcam_1', 'webcam_2']
+num_classes: 3

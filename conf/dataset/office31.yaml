@@ -1,0 +1,5 @@
+root: _dataset/office31
+name: office31
+domain: amazon
+domains: ['amazon_0', 'amazon_1', 'amazon_2', 'dslr_0', 'dslr_1', 'dslr_2', 'webcam_0', 'webcam_1', 'webcam_2']
+num_classes: 10
