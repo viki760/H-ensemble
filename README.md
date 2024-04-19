@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 # H-ensemble
 Codes and supports for AAAI-24 [H-ensemble: An Information Theoretic Approach to Reliable Few-Shot Multi-Source-Free Transfer](https://ojs.aaai.org/index.php/AAAI/article/view/29528)
+ArXiv link (with Appendix): [https://arxiv.org/abs/2312.12489]
 
 ## Abstract
 
